@@ -140,6 +140,8 @@ body {
     margin: 0 auto;
     background-position: center center;
     padding: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .banner-title span {
     font-family: 'Open Sans', sans-serif;
@@ -148,31 +150,28 @@ body {
     background-color: #F37335;
     width: 95px;
     font-size: 14px;
-    text-align: right;
+    text-align: center;
     text-transform: uppercase;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     border-radius: 14px;
-    margin-bottom: 3px;
+    margin-bottom: 9px;
     font-weight: 600;
-}
-.banner-title span::before {
-    content: '·';
-    left: -7px;
-    position: relative;
 }
 .banner-title {
     color: white;
     font-weight: 900;
     font-size: 60px;
-    margin-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 11px;
 }
 .banner-text {
-    max-width: 353px;
+    max-width: 307px;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     color: white;
     margin: 0;
+    line-height: 24px;
 }
 .banner-link {
     text-decoration: none;
@@ -180,9 +179,11 @@ body {
     font-size: 14px;
     color: #1e2f40;
     background-color: #FBB731;
-    padding: 20px 25px;
-    display: inline-block;
+    padding: 21px 0px;
+    display: block;
     margin-top: 15px;
-    margin-bottom: 100px;
     border-radius: 5px;
+    max-width: 170px;
+    text-align: center;
+    text-transform: uppercase;
 }
