@@ -261,11 +261,8 @@ body {
     border-radius: 5px;
     border: none;
     padding: 11px 35px 9px 57px;
-    /*text-transform: uppercase;*/
     /*margin: 0 auto;*/
     margin-top: 18px;
-    /*font-size: 14px;*/
-    /*line-height: 18px;*/
 }
 .menu-grid-text {
     font-size: 14px;
@@ -286,9 +283,12 @@ body {
     background-position: left center;
     background-size: auto 50%;
 }
-.more-menu {
+.more-menu-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     row-gap: 50px;
+}
+.more-menu-grid > *:nth-last-child(-n+3) {
+    margin-bottom: 140px;
 }
