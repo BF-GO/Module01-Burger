@@ -8,15 +8,13 @@ body {
     padding-right: 15px;
 }
 .header {
-    border-bottom: 1px solid #DEDEDE;
-}
-.header {
     font-family: 'Open Sans', sans-serif;
     display: flex; 
     align-items: center;
     justify-content: space-between;
     padding-top: 26px;
-    padding-bottom: 25px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #DEDEDE;
 }
 .header-logo {
     display: block;
@@ -51,6 +49,12 @@ body {
 }
 .header-nav a.active::after {
     background: #FFC725;
+}
+.header-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 68.5%;
 }
 .button {
     display: flex;
@@ -171,22 +175,19 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     color: white;
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 35px;
     line-height: 24px;
 }
 .banner-link {
-    text-decoration: none;
-    font-weight: 700;
     font-size: 14px;
-    color: #1e2f40;
-    background-color: #FBB731;
-    padding: 21px 0px;
-    display: block;
-    margin-top: 15px;
-    border-radius: 5px;
-    max-width: 170px;
-    text-align: center;
+    padding: 18px 25px;
     text-transform: uppercase;
+    text-decoration: none;
+    color: #1E2F40;
+    background-color: #FBB731;
+    border-radius: 5px;
+    border: 1px solid #FBB731;
 }
 .menu-header {
     display: flex;
