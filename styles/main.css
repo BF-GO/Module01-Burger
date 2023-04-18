@@ -54,7 +54,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-basis: 68.5%;
+    flex-basis: 68.5%; 
 }
 .button {
     display: flex;
@@ -189,6 +189,10 @@ body {
     border-radius: 5px;
     border: 1px solid #FBB731;
 }
+.banner-link:hover {
+    background-color: transparent; 
+    color: #FBB731;
+}
 .menu-header {
     display: flex;
     align-items: center;
@@ -317,7 +321,7 @@ body {
     text-transform: uppercase;
     margin-bottom: 19px;
 }
-.footer-item li {
+.footer-list li {
     margin-bottom: 9px;
     font-family: 'Lato', sans-serif;
     font-size: 15px;
@@ -325,7 +329,7 @@ body {
     font-weight: 700;
     line-height: 24px;
 }
-.footer-item a {
+.footer-list a {
     color: #DEDEDE;
     text-decoration: none;
     font-weight: 400;
@@ -336,14 +340,16 @@ body {
     font-weight: 400;
     margin-bottom: 2px;
 }
-.footer-tel ul {
+.footer-list-tel {
+    margin-top: 0;
+}
+.footer-list-tel li {
+    margin-bottom: 12px;
+}
+.footer-list-tel a {
     font-size: 20px;
     font-weight: 900;
     color: #FBB731;
-    margin-top: 14px;
-}
-.footer-tel li {
-    margin-bottom: 12px;
 }
 .footer-list {
     padding-left: 0;
