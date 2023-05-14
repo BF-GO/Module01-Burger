@@ -265,9 +265,9 @@ body {
     background-color: #FBB731;
     border-radius: 5px;
     border: none;
-    padding: 11px 35px 9px 57px;
+    padding: 11px 35px 9px 35px;
     display: flex;
-    margin-top: 18px;
+    margin: 18px auto 0;
 }
 .menu-grid-btn:hover {
     background-color: #F37335;
@@ -332,6 +332,9 @@ body {
     color: #DEDEDE;
     font-weight: 700;
     line-height: 24px;
+}
+.footer-list li:hover a {
+    color: #F37335;
 }
 .footer-list a {
     color: #FBB731;
