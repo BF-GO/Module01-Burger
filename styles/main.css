@@ -307,7 +307,7 @@ body {
 .footer {
     background: #1E2F40;
     color: #fff;
-    padding-top: 106px;
+    padding-top: 116px;
     padding-bottom: 106px;
 }
 .footer-box {
@@ -326,6 +326,7 @@ body {
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 19px;
+    margin-top: 0px;
 }
 .footer-list li {
     margin-bottom: 9px;
