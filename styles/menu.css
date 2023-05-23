@@ -144,7 +144,7 @@ body {
     background-image: url(../images/banner-bg.jpg);
     margin: 0 auto;
     margin-bottom: 80px;
-    background-position: center center;
+    background-position: 0 center;
     padding: 100px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -334,17 +334,17 @@ body {
 }
 .footer-list li {
     margin-bottom: 9px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'lato', sans-serif;
     font-size: 15px;
-    color: #DEDEDE;
+    color: #FAF9F9;
     font-weight: 700;
     line-height: 24px;
 }
 .footer-list li:hover a {
-    color: #F37335;
+    color: #FAF9F9;
 }
 .footer-list a {
-    color: #FBB731;
+    color: #DEDEDE;
     text-decoration: none;
     font-weight: 400;
 }
@@ -369,6 +369,10 @@ body {
     padding-left: 0;
     list-style-type: none;
 }
+.footer-tel a[href="tel:+79007871313"]:hover,
+.footer-tel a[href="tel:+79007001414"]:hover {
+    color: #F37335;
+}
 .button-up {
     background-color: #FBB731;
     font-weight: 700;
@@ -391,4 +395,10 @@ body {
 }
 .button-up.visible {
     opacity: 1;
+}
+
+/* Responsive */
+
+@media(max-width: 1000px) {
+
 }
