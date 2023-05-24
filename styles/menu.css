@@ -133,7 +133,7 @@ body {
     margin-top: 17px;
     margin-bottom: 20px;
 }
-.discription {
+.description {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     line-height: 1.6;
@@ -143,9 +143,10 @@ body {
 .banner-box {
     background-image: url(../images/banner-bg.jpg);
     margin: 0 auto;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     background-position: 0 center;
     padding: 100px;
+    padding-bottom: 120px;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -231,8 +232,6 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     row-gap: 50px;
-}
-.menu-grid > *:nth-last-child(-n+3) {
     margin-bottom: 100px;
 }
 .menu-grid-cover {
@@ -305,14 +304,12 @@ body {
     gap: 20px;
     row-gap: 50px;
 }
-.more-menu-grid > *:nth-last-child(-n+3) {
-    margin-bottom: 140px;
-}
 .footer {
     background: #1E2F40;
     color: #fff;
     padding-top: 116px;
     padding-bottom: 106px;
+    margin-top: 140px;
 }
 .footer-box {
     display: flex;
@@ -399,6 +396,63 @@ body {
 
 /* Responsive */
 
-@media(max-width: 1000px) {
+@media screen and (min-width:1001px){
+    .footer-list + .footer-list-tel {
+         display: none;
+    }
+}
 
+@media screen and (max-width:1000px) {
+    .container {
+        max-width: 738px;
+    }
+    .header-logo {
+        width: 150px;
+        height: 48px;
+        background-size: contain;
+    }
+    .header-nav {
+        gap: 22px;
+    }
+    .header-item {
+        flex-basis: 75.5%;
+    }
+    .bg {   
+        margin-bottom: 72px;
+    }
+    .banner-box {
+        padding: 100px 100px 120px 40px;
+        background-position: -83px center;
+    }
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .menu-grid {
+        margin-bottom: 90px;
+    }
+    .footer-tel {
+        display: none;
+    }
+    .footer-list + .footer-list-tel {
+        display: block;
+    }
+
+    .menu-other {
+        overflow: hidden;
+        height: 554px;
+    }
+    .menu-other .more-menu-grid {
+        display: flex;
+        width: auto;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        padding-bottom: 50px;
+    }
+    .menu-other .menu-grid-item {
+        flex: 0 0 281px;
+    }
+    .menu-other .menu-grid-cover,
+    .menu-other .menu-grid-cover img {
+        height: 320px;
+    }
 }
