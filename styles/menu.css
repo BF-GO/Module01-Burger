@@ -580,4 +580,7 @@ body {
     .menu-grid-btn {
         padding: 10px 21px 10px 21px;
     }
+    .menu-grid-title {
+        font-size: 20px;
+    }
 }
