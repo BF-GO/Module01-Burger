@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Burgers menu</title>
+    <link rel="icon" href="./images/Icon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
@@ -16,7 +17,7 @@
         <div class="container">
             <div class="header">
                 <div class="header-burger">
-                    <button class="burger"></button>
+                    <button class="burger" onclick="openModal()"></button>
                 </div>
                 <div class="header-item">
                     <a href="index.html" class="header-logo"></a>
@@ -239,14 +240,17 @@
             </div>
         </div>
     </footer>
-    <div class="modal">
+    <div class="modal" id="modal">
         <ul class="header-nav">
             <li><a href="index.html">Главная</a></li>
+            <hr class="burger-line">
             <li><a href="#" class="active">Меню</a></li>
+            <hr class="burger-line">
             <li><a href="#">О нас</a></li>
+            <hr class="burger-line">
             <li><a href="#">Контакты</a></li>
         </ul>
-        <button class="burger-close"></button>
+        <button class="burger-close" onclick="closeModal()"></button>
     </div>
     <a href="#headerTop" class="header-up hidden" id="btnUp">Наверх</a>
     <script src="main.js"></script>

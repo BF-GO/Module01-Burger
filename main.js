@@ -44,9 +44,9 @@
         // Menu
 
         function openModal() {
-             document.getElementById("modal").style.top = "0px";
+             document.getElementById("modal").style.left = "0px";
          }
 
          function closeModal() {
-             document.getElementById("modal").style.top = "-400px";
+             document.getElementById("modal").style.left = "-1600px";
          }

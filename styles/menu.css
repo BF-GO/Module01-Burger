@@ -29,13 +29,14 @@ body {
     list-style-type: none;
     padding-left: 0;
     gap: 46px;
+    margin: 0;
 }
 .header-nav a {
     font-weight: 600;
     font-size: 20px;
     color: #443737;
     text-decoration: none;
-    transition: 0.7s;
+    transition: 700ms;
 }
 .header-nav a:hover {
     color: #FFC725;
@@ -203,6 +204,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 90px;
+    align-items: flex-start;
 }
 .menu-title {
     font-size: 44px;
@@ -210,7 +213,6 @@ body {
     text-transform: uppercase;
     color: #1B2A49;
     margin: 0;
-    margin-bottom: 34px;
 }
 .menu-select {
     border: 1px solid #DEDEDE;
@@ -225,7 +227,6 @@ body {
     background-size: 12.79px 7.75px;
     background-repeat: no-repeat;
     background-position:  89% center;
-    margin-bottom: 38px;
 }
 .menu-grid {
     display: grid;
@@ -272,11 +273,11 @@ body {
     padding: 11px 35px 9px 35px;
     display: flex;
     margin: 18px auto 0;
+    transition: 700ms;
 }
 .menu-grid-btn:hover {
     background-color: #F37335;
     cursor: pointer;
-    transition: 800ms;
 }
 .menu-grid-text {
     font-size: 14px;
@@ -382,7 +383,7 @@ body {
     bottom: 20px;
     right: 20px;
     border-radius: 5px;
-    transition: 1s;
+    transition: 700ms;
 }
 .button-up:hover {
     background-color: #F37335;
@@ -397,23 +398,46 @@ body {
  /*  Modal   */
 
  .modal {
-    background-color: #FFF8DC;
-    max-width: 500px;
+    background-color: #FBFBFB;
+    max-width: 320px;
     text-align: center;
     position: absolute;
     top: 0;
-    left: 0;
+    left: -1600px;
     right: 0;
     margin: 20px auto 0;
     padding: 40px 30px;
     box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: 700ms;
  }
  .modal .header-nav {
     flex-direction: column;
     align-items: center;
-    gap: 23px;
+    gap: 0;
+    margin: 0;
  }
- 
+ .burger-close {    
+    width: 22px;
+    height: 22px;
+    background-image: url(../images/burger-close.svg);
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+ }
+ .burger-line {
+    border: none; 
+    height: 1px; 
+    width: 150px;
+    margin: 10px 0; 
+    background-color: #DFDFDF;
+}
  .burger {
     width: 34px;
     height: 22px;
@@ -430,8 +454,15 @@ body {
     .footer-list + .footer-list-tel {
          display: none;
     }
+    .modal {
+        display: none;
+    }
 }
-
+@media screen and (min-width:766px){
+    .header-burger { 
+        display: none;
+    }
+}
 @media screen and (max-width:1000px) {
     .container {
         max-width: 738px;
@@ -484,5 +515,69 @@ body {
     .menu-other .menu-grid-cover,
     .menu-other .menu-grid-cover img {
         height: 320px;
+    }
+}
+@media screen and (max-width:766px){
+    nav {
+        display: none;
+    }
+    .header {
+        gap: 20px;
+    }
+    
+}
+@media screen and (max-width:520px){    
+    .title {
+        font-size: 38px;
+    }
+    .bg {
+        padding: 50px 0;
+    }
+    .banner-box {
+        padding: 35px 15px 55px 15px;
+        margin-bottom: 30px;
+        background-position: 17% center;
+    }
+    .menu-title {
+        font-size: 27px;
+    }
+    .menu-select {
+        font-size: 12px;
+        flex-basis: 136px;
+    }
+    .menu-header {
+        height: 80px;
+    }
+}
+@media screen and (max-width:360px){
+    .header-logo {
+        width: 116px;
+        height: 37px;
+        background-size: contain;
+    }
+    .breadcrumbs li a {
+        font-size: 14px;
+    }
+    .description {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:320px){
+    .banner-box {
+        background-position: 25% center;
+    }
+}
+@media screen and (max-width:786px){
+    .menu-grid-item {
+        width: 139px;
+    }
+    .menu-grid-cover {
+        height: 180px;
+    }
+    .menu-grid {
+        grid-template-columns: repeat(auto-fit, minmax(139px, 1fr));
+    }
+    .menu-grid-btn {
+        padding: 10px 21px 10px 21px;
     }
 }
