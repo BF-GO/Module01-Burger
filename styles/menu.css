@@ -500,7 +500,7 @@ body {
 
     .menu-other {
         overflow: hidden;
-        height: 554px;
+        height: 559px;
     }
     .menu-other .more-menu-grid {
         display: flex;
@@ -570,17 +570,33 @@ body {
 @media screen and (max-width:786px){
     .menu-grid-item {
         width: 139px;
+        display: flex;
+        flex-direction: column;
     }
-    .menu-grid-cover {
+    .menu .menu-grid-cover, .menu .menu-grid-cover img  {
         height: 180px;
     }
     .menu-grid {
         grid-template-columns: repeat(auto-fit, minmax(139px, 1fr));
+        margin-bottom: 40px;
     }
     .menu-grid-btn {
         padding: 10px 21px 10px 21px;
+        align-self: flex-end;
     }
     .menu-grid-title {
         font-size: 20px;
+        width: 110px;
+        height: 76px;
+    }
+    .menu-other {
+        height: 457px;
+    }
+    .menu-other .menu-grid-cover,
+    .menu-other .menu-grid-cover img {
+        height: 180px;
+    }
+    .menu-other .menu-grid-item {
+        flex: 0 0 139px;
     }
 }
